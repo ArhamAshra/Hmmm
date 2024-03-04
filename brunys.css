@@ -98,12 +98,14 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     cursor: pointer;
     transition: box-shadow 0.3s;
+    border-radius: 10px; /* Rounded corners */
 }
 
 button:hover,
 button:focus {
     box-shadow: 0 0 10px 5px rgba(2, 14, 237, 0.7); /* Glow effect on hover or focus */
 }
+
 
 
 div {
