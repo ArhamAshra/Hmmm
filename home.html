@@ -6,16 +6,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fast Loading Page</title>
+    <title>Slow Loading Page</title>
     <style>
         body {
             opacity: 0;
-            transition: opacity 0.5s ease-in-out;
+            transition: opacity 1s ease-in-out;
         }
     </style>
 </head>
 <body>
     <div id="loading">Loading...</div>
+
+    <!-- Your content goes here -->
+    <h1 id="heading" style="display: none;">Welcome to Slow Loading Page!</h1>
+    <p id="paragraph" style="display: none;">This is a simple example of a page where elements load gradually.</p>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -25,7 +29,7 @@
                 document.getElementById("heading").style.display = "block";
                 document.getElementById("paragraph").style.display = "block";
                 document.body.style.opacity = 1;
-            }, 500); // Adjust the delay time (in milliseconds) as needed
+            }, 2000); // Adjust the delay time (in milliseconds) as needed
         });
     </script>
 </body>
