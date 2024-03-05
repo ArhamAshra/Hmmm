@@ -6,27 +6,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slow Loading Page</title>
+    <title>Simple Loading Page</title>
     <style>
         body {
             opacity: 0;
-            transition: opacity 1s ease-in-out;
+            transition: opacity 0.5s ease-in-out;
         }
     </style>
 </head>
 <body>
     <div id="loading">Loading...</div>
 
-    
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             // Simulate a delay for loading content
             setTimeout(function () {
                 document.getElementById("loading").style.display = "none";
-                document.getElementById("heading").style.display = "block";
-                document.getElementById("paragraph").style.display = "block";
                 document.body.style.opacity = 1;
-            }, 2000); // Adjust the delay time (in milliseconds) as needed
+            }, 500); // Adjust the delay time (in milliseconds) as needed
         });
     </script>
 </body>
